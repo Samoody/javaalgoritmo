@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Criar um objeto da classe Scanner para receber input do usuário
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Por favor, insira um número inteiro: ");  // Ponto e vírgula adicionado aqui
+
+        // Ler o número inteiro inserido pelo usuário
+        int numero = scanner.nextInt();
+
+        // Exibir o número inserido pelo usuário
+        System.out.println("Você digitou o número: " + numero);  // Corrigido a concatenação
+
+        // Fechar o Scanner
+        scanner.close();
+    }
+}
