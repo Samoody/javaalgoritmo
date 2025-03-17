@@ -1,0 +1,16 @@
+public class NumeroReal {
+    public static void main(String[] args) {
+        // Criando um objeto Scanner para entrada de dados
+        Scanner scanner = new Scanner(System.in);
+        
+        // Solicitando ao usuário um número real
+        System.out.print("Digite um número real: ");
+        double numero = scanner.nextDouble();
+        
+        // Exibindo o valor digitado
+        System.out.println("Você digitou: " + numero);
+        
+        // Fechando o Scanner
+        scanner.close();
+    }
+}
