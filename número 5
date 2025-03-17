@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class SomaInteiros {
+    public static void main(String[] args) {
+        // Criando um objeto Scanner para entrada de dados
+        Scanner scanner = new Scanner(System.in);
+        
+        // Solicitando ao usuário dois números inteiros
+        System.out.print("Digite o primeiro número inteiro: ");
+        int numero1 = scanner.nextInt();
+        
+        System.out.print("Digite o segundo número inteiro: ");
+        int numero2 = scanner.nextInt();
+        
+        // Calculando a soma
+        int soma = numero1 + numero2;
+        
+        // Exibindo o resultado
+        System.out.println("A soma dos números é: " + soma);
+        
+        // Fechando o Scanner
+        scanner.close();
+    }
+}
