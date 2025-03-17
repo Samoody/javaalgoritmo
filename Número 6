@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class MultiplicaReais {
+    public static void main(String[] args) {
+        // Criando um objeto Scanner para entrada de dados
+        Scanner scanner = new Scanner(System.in);
+        
+        // Solicitando ao usuário dois números reais
+        System.out.print("Digite o primeiro número real: ");
+        double numero1 = scanner.nextDouble();
+        
+        System.out.print("Digite o segundo número real: ");
+        double numero2 = scanner.nextDouble();
+        
+        // Calculando a multiplicação
+        double resultado = numero1 * numero2;
+        
+        // Exibindo o resultado
+        System.out.println("O resultado da multiplicação é: " + resultado);
+        
+        // Fechando o Scanner
+        scanner.close();
+    }
+}
