@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class ValorBooleano {
+    public static void main(String[] args) {
+        // Criando um objeto Scanner para entrada de dados
+        Scanner scanner = new Scanner(System.in);
+        
+        // Solicitando ao usuário um valor booleano
+        System.out.print("Digite um valor booleano (true/false): ");
+        boolean valor = scanner.nextBoolean();
+        
+        // Exibindo o valor digitado
+        System.out.println("Você digitou: " + valor);
+        
+        // Fechando o Scanner
+        scanner.close();
+    }
+}
