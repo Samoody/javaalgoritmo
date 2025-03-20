@@ -1,20 +1,27 @@
 import java.util.Scanner;
+import java.util.InputMismatchException;
 
 public class Questao1 {
     public static void main(String[] args) {
         // Criando um objeto Scanner para ler a entrada do usuário
         Scanner scanner = new Scanner(System.in);
 
-        // Solicitando ao usuário que insira um número inteiro
-        System.out.print("Por favor, insira um número inteiro: ");
+        // Tentando ler um número inteiro
+        try {
+            // Solicitando ao usuário que insira um número inteiro
+            System.out.print("Por favor, insira um número inteiro: ");
 
-        // Lendo o número inteiro fornecido pelo usuário
-        int numero = scanner.nextInt();
+            // Lendo o número inteiro fornecido pelo usuário
+            int numero = scanner.nextInt();
 
-        // Exibindo o valor digitado
-        System.out.println("Você digitou o número: " + numero);
-
-        // Fechando o scanner
-        scanner.close();
+            // Exibindo o valor digitado
+            System.out.println("Você digitou o número: " + numero);
+        } catch (InputMismatchException e) {
+            // Caso o usuário não tenha digitado um número inteiro
+            System.out.println("O valor digitado não é um número inteiro.");
+        } finally {
+            // Fechando o scanner
+            scanner.close();
+        }
     }
 }
