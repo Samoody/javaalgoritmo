@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class EntradaUsuario {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicita e lê um caractere
+        System.out.print("Digite um caractere: ");
+        char caractere = scanner.next().charAt(0);
+
+        // Solicita e lê um número inteiro
+        System.out.print("Digite um número inteiro: ");
+        int numero = scanner.nextInt();
+
+        // Exibe os valores lidos
+        System.out.println("Caractere digitado: " + caractere);
+        System.out.println("Número digitado: " + numero);
+
+        scanner.close();
+    }
+}
