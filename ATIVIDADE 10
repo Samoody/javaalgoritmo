@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class ValorAbsoluto {
+    public static void main(String[] args) {
+        // Criando um objeto Scanner para entrada de dados
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicitando ao usuário que insira um número inteiro
+        System.out.print("Digite um número inteiro: ");
+        int numero = scanner.nextInt();
+
+        // Calculando o valor absoluto do número
+        int valorAbsoluto = Math.abs(numero);
+
+        // Exibindo o valor absoluto
+        System.out.println("O valor absoluto de " + numero + " é: " + valorAbsoluto);
+
+        // Fechando o Scanner
+        scanner.close();
+    }
+}
