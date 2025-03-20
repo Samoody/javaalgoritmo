@@ -17,7 +17,7 @@ public class Questao1 {
             // Exibindo o valor digitado
             System.out.println("Você digitou o número: " + numero);
         } catch (InputMismatchException e) {
-            // Caso o usuário não tenha digitado um número inteiro
+            // Se o usuário não tenha digitado um número inteiro
             System.out.println("O valor digitado não é um número inteiro.");
         } finally {
             // Fechando o scanner
