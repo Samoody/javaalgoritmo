@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class RaizQuadrada {
+    public static void main(String[] args) {
+        // Criando um objeto Scanner para entrada de dados
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicitando ao usuário que insira um número real
+        System.out.print("Digite um número real: ");
+        double numero = scanner.nextDouble();
+
+        // Verificando se o número é maior ou igual a zero (pois não existe raiz quadrada de números negativos no conjunto dos reais)
+        if (numero >= 0) {
+            // Calculando a raiz quadrada do número
+            double raizQuadrada = Math.sqrt(numero);
+
+            // Exibindo a raiz quadrada
+            System.out.println("A raiz quadrada de " + numero + " é: " + raizQuadrada);
+        } else {
+            // Exibindo mensagem de erro se o número for negativo
+            System.out.println("Não é possível calcular a raiz quadrada de um número negativo.");
+        }
+
+        // Fechando o Scanner
+        scanner.close();
+    }
+}
