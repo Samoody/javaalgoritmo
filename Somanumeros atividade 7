@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class SomaNumeros {
+    public static void main(String[] args) {
+        // Criando um objeto Scanner para entrada de dados
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicitando ao usuário que insira um número inteiro
+        System.out.print("Digite um número inteiro: ");
+        int numeroInteiro = scanner.nextInt();
+
+        // Solicitando ao usuário que insira um número real
+        System.out.print("Digite um número real: ");
+        double numeroReal = scanner.nextDouble();
+
+        // Somando os números
+        double resultado = numeroInteiro + numeroReal;
+
+        // Exibindo o resultado
+        System.out.println("A soma do número inteiro e do número real é: " + resultado);
+
+        // Fechando o Scanner
+        scanner.close();
+    }
+}
