@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class OperacaoLogicaAND {
+    public static void main(String[] args) {
+        // Criando um objeto Scanner para entrada de dados
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicitando ao usuário que insira o primeiro valor booleano
+        System.out.print("Digite o primeiro valor booleano (true ou false): ");
+        boolean valor1 = scanner.nextBoolean();
+
+        // Solicitando ao usuário que insira o segundo valor booleano
+        System.out.print("Digite o segundo valor booleano (true ou false): ");
+        boolean valor2 = scanner.nextBoolean();
+
+        // Realizando a operação lógica AND entre os dois valores booleanos
+        boolean resultado = valor1 && valor2;
+
+        // Exibindo o resultado da operação
+        System.out.println("Resultado da operação AND: " + resultado);
+
+        // Fechando o Scanner
+        scanner.close();
+    }
+}
